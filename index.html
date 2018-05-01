@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<script src=javascriptpart2.js></script>
+
+<!---var firstResponse = prompt("Do you want to play a game?");
+if (firstResponse === "yes") {
+    var userName = prompt("Please enter your name.")
+} else if (firstResponse === "no") {
+    alert("Maybe next time. Have a good day! :)")
+} else {
+    alert("Please enter 'yes' or 'no'.")
+}
+
+    let user = 40;
+    let grant = 10;
+    let win = 0;
+    let done = false;
+
+    while (done === false) {
+        user -= Math.floor(Math.random() * 2) + 1;
+        grant -= Math.floor(Math.random() * 2) + 1;
+        console.log(`${userName} has ${user} health points left.`);
+        console.log(`Almighty Grant has ${grant} health points left.`);
+        if (win === 2 && grant <=0) {
+            console.log(`${userName} is the champion!`);
+            done = true;
+        } else if (grant <= 0) {
+            grant = 10;
+            win ++;
+            console.log(`You have won round ${win}!`);
+        } else if (user <= 0) {
+            console.log("The Almighty Grant has won!");
+            done = true;
+        } else {
+            continue;
+        }
+    }
